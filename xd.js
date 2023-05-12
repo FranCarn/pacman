@@ -16,3 +16,13 @@ const exito = crearImpresoraDeMensajes(
   "Éxito",
   "background: green; color: white;"
 );
+
+console.log("1");
+const promise = new Promise((resolve, reject) => {
+  resolve(2);
+});
+promise.then((value) => console.log(value));
+setTimeout(() => {
+  console.log("3");
+}, 0);
+console.log("4");
